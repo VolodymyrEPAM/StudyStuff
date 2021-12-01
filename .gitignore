@@ -1,6 +1,6 @@
-/.idea
+/idea
 *.log
-SomeTaskThatNotActuallyHomework.java
+/src/main/java/SomeTaskThatNotActuallyHomework.java
 # Default ignored files
 /shelf/
 /workspace.xml
