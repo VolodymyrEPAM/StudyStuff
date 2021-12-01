@@ -11,14 +11,14 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <someVersion>3.141.59</someVersion>
+        <SeleniumWebDriverVersion>3.141.59</SeleniumWebDriverVersion>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>${someVersion}</version>
+            <version>${SeleniumWebDriverVersion}</version>
         </dependency>
     </dependencies>
 
