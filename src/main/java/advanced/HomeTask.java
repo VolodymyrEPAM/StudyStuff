@@ -22,7 +22,7 @@ public class HomeTask {
         list.add(4);
         list.add(6);
         System.out.println("Task2(before): " + list);
-        System.out.println("Task2(after): " + noToDuplication.getCollectionWithoutDuplication(list));
+        System.out.println("Task2(after): " + noToDuplication.getCcollectionWithoutDuplication(list));
         System.out.println(" ");
 
         Map<Integer, String> states = new HashMap();

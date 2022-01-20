@@ -1,6 +1,7 @@
 package advanced;
 
 import java.util.Collection;
+import java.util.TreeSet;
 
 public class SayNoToDuplication<T> {
     public Collection<T> getCollectionWithoutDuplication(Collection<T> collection) {
@@ -12,5 +13,8 @@ public class SayNoToDuplication<T> {
             }
         }
         return collection;
+    }
+    public Collection<T> getCcollectionWithoutDuplication(Collection<T> collection) {
+        return new TreeSet(collection);
     }
 }
