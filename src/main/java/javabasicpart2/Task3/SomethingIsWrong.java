@@ -1,4 +1,4 @@
-package JavaBasicPart2.Task3;
+package javabasicpart2.Task3;
 
 public class SomethingIsWrong {
     public static void main(String[] args) {

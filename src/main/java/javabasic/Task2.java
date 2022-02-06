@@ -1,4 +1,4 @@
-package JavaBasic;
+package javabasic;
 
 public class Task2 {
     public static void main(String[] args) {

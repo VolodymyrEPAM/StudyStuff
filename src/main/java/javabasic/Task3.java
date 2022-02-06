@@ -1,6 +1,6 @@
-package JavaBasic;
+package javabasic;
 
-import static Utils.CalculationUtils.*;
+import static utils.CalculationUtils.*;
 
 public class Task3 {
     public static void main(String[] args) {

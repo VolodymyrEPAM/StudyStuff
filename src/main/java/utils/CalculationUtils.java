@@ -1,4 +1,4 @@
-package Utils;
+package utils;
 
 public class CalculationUtils {
     public static int sum(int a, int b) {

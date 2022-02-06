@@ -1,4 +1,4 @@
-package JavaBasicPart2.Task4;
+package javabasicpart2.Task4;
 
 import lombok.Builder;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package JavaBasicPart2.Task2;
+package javabasicpart2.Task2;
 
 public class Devices {
         Computer gamePC = new Computer("Asus",45);
