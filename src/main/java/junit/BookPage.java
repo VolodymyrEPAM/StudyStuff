@@ -5,20 +5,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import webdriver.BasePage;
 
-public class SearchResultPage extends BasePage {
+public class BookPage extends BasePage {
     private final static long TIME_TO_WAIT = 15;
 
-    @FindBy(xpath = "(//div[@class='book-item']//div[@class='btn-wrap'])[1]")
-    WebElement firstBookAddToCartButton;
-    @FindBy(xpath = "//div[@class='modal-content']//a[@href]")
+    @FindBy(xpath = "//a[@class='btn btn-primary add-to-basket']")
+    WebElement addToCartButton;
+    @FindBy(xpath = "//a[@data-localizer-string-id='bd_js_basket_checkout']")
     WebElement checkCartPupUpButton;
 
-    public SearchResultPage(WebDriver driver) {
+    public BookPage(WebDriver driver) {
         super(driver);
     }
 
-    public void clickAddToCartButtonForTheFirstItem() {
-        firstBookAddToCartButton.click();
+    public void clickAddToCartButton() {
+        addToCartButton.click();
         waitVisibilityOfElement(TIME_TO_WAIT, checkCartPupUpButton);
     }
 
