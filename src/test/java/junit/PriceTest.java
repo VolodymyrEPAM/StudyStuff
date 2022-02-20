@@ -1,6 +1,7 @@
 package junit;
 
 import org.junit.Test;
+import org.testng.asserts.SoftAssert;
 
 import static org.junit.Assert.assertEquals;
 
@@ -29,8 +30,10 @@ public class PriceTest extends BaseTest {
         basketPage.clickCheckout();
         paymentPage.sendKeysToEmailInput(EMAIL_INPUT);
 
+        SoftAssert softAssert= new SoftAssert();
         assertEquals(EXPECTED_SUBTOTAL_PRICE, paymentPage.getPrice(SUBTOTAL_PRICE));
         assertEquals(EXPECTED_TOTAL_PRICE, paymentPage.getPrice(TOTAL_PRICE));
         assertEquals(EXPECTED_VAT_PRICE, paymentPage.getPrice(VAT_PRICE));
+        softAssert.assertAll();
     }
 }
