@@ -49,7 +49,7 @@ public class StepsDefinition {
         homePage.searchWithProductCode(productCode);
     }
 
-    @And("I add current book to cart")
+    @And("^(I|User) ad(d|ds) current book to (cart|basket)$")
     public void clickAddToCartButton() {
         bookPage = pageFactoryManager.getBookPagePage();
         bookPage.clickAddToCartButton();
@@ -69,7 +69,7 @@ public class StepsDefinition {
         paymentPage.sendKeysToEmailInput(email);
     }
 
-    @Then("I see all prices is correct:")
+    @Then("^(I|User) see (all|that each) pric(e|es) (is|are) correct:$")
     public void iVerifyThatBothTotalAndSubtotalIsEqualToExpectedPrice(List<String> priceType) {
         SoftAssertions softly = new SoftAssertions();
         priceType.forEach(typeOfPrice -> softly.assertThat(paymentPage.getPrice(typeOfPrice))

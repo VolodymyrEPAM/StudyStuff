@@ -2,11 +2,11 @@ Feature: As a user I want to verify payment process
 
   Scenario Outline: Check price correctness after adding product to cart
     Given I open book page by product code: <productCode>
-    When I add current book to cart
+    When User adds current book to basket
     Then I see that '<expectedPrice>' is correct
 
     When I navigate to payment page and fill in '<email>' field
-    Then I see all prices is correct:
+    Then User see that each price is correct:
       | Total     |
       | Sub-total |
       | VAT       |
