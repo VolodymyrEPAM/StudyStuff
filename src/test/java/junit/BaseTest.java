@@ -12,17 +12,17 @@ public class BaseTest {
     private WebDriver driver;
     private static final String BOOKDEPOSITORY_URL = "https://www.bookdepository.com/";
 
-    @BeforeClass
-    public static void profileSetup() {
-        chromedriver().setup();
-    }
-
-    @Before
-    public void testSetup() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get(BOOKDEPOSITORY_URL);
-    }
+//    @BeforeClass
+//    public static void profileSetup() {
+//        chromedriver().setup();
+//    }
+//
+//    @Before
+//    public void testSetup() {
+//        driver = new ChromeDriver();
+//        driver.manage().window().maximize();
+//        driver.get(BOOKDEPOSITORY_URL);
+//    }
 
     @After
     public void tierDown() {

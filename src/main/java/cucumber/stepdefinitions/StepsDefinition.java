@@ -30,18 +30,18 @@ public class StepsDefinition {
     BookPage bookPage;
     PaymentPage paymentPage;
 
-    @Before
-    public void setUp() {
-        chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        pageFactoryManager = new PageFactoryManager(driver);
-    }
-
-    @After
-    public void tierDown() {
-        driver.close();
-    }
+//    @Before
+//    public void setUp() {
+//        chromedriver().setup();
+//        driver = new ChromeDriver();
+//        driver.manage().window().maximize();
+//        pageFactoryManager = new PageFactoryManager(driver);
+//    }
+//
+//    @After
+//    public void tierDown() {
+//        driver.close();
+//    }
 
     @And("I open book page by product code: {}")
     public void openBookPageByProductCode(String productCode) {
